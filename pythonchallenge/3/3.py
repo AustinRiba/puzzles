@@ -17,12 +17,8 @@ def main():
 			if (beforeA.isupper() or afterA.isupper()):
 				found = False
 			if(found):
-				result+=text[pos-3:pos+4]+"\n"
-				pos+=1
-			else:
-				pos+=1
-		else:
-			pos+=1
+				result+=text[pos]
+		pos+=1
 	return result
 
 print("%s") % main()
